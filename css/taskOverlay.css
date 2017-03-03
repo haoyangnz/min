@@ -7,6 +7,26 @@
 	background-color: inherit;
 	z-index: 1;
 	border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+	padding-left: 80px;
+	display: flex;
+}
+#task-overlay-input {
+	flex: 1;
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+	border: 0;
+	background: inherit;
+	color: inherit;
+	min-width: 80px;
+}
+body.fullscreen .navbar,
+body.notMac .navbar {
+	padding-left: 0.5em;
+}
+#task-overlay-input::-webkit-input-placeholder {
+	opacity: 0.75;
+	color: inherit;
 }
 #switch-task-button {
 	position: absolute;
